@@ -1,2 +1,0 @@
- PLEASE ADD  41.9295, 88.7504  to your simulator coordinates as this app is intended to be
-used at NIU main campus only!

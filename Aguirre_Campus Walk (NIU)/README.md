@@ -11,7 +11,7 @@ NIU campus to find buildings as I wish I had at one point
 1. `git clone https://github.com/cristian789/iOS-Mobile-Programming-/Aguirre_Campus Walk (NIU)/`
 2. `Run it on Xcode`
 3. `PLEASE ADD  41.9295, 88.7504  to your simulator coordinates as this app is intended to be used at NIU main campus only`
-4. `Have a blast!`
+4. `Have a blast! `
 
 **Lessons learned**
 ---

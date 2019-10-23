@@ -1,3 +1,5 @@
-# Example Site
+# Alaska App 
+https://img.shields.io/badge/<Swift>-<Xcode>-<brightgreen>
 
-this is a sample readme file
+This is a simple program inteded to help anyone trying to 
+visit Alaska but more specifically Juneau.

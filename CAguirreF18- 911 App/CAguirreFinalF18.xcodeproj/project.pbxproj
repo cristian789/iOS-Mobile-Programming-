@@ -193,13 +193,16 @@
 				TargetAttributes = {
 					F54EE97721B9AA0F00C7DD59 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1120;
 					};
 					F54EE98B21B9AA0F00C7DD59 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1120;
 						TestTargetID = F54EE97721B9AA0F00C7DD59;
 					};
 					F54EE99621B9AA0F00C7DD59 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1120;
 						TestTargetID = F54EE97721B9AA0F00C7DD59;
 					};
 				};
@@ -430,8 +433,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S224WD5FPF;
+				DEVELOPMENT_TEAM = 29G42Z5SBF;
 				INFOPLIST_FILE = CAguirreFinalF18/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -439,7 +443,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aguirre.niu.edu.CAguirreFinalF18;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -448,8 +453,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S224WD5FPF;
+				DEVELOPMENT_TEAM = 29G42Z5SBF;
 				INFOPLIST_FILE = CAguirreFinalF18/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,7 +463,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aguirre.niu.edu.CAguirreFinalF18;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -467,8 +474,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S224WD5FPF;
+				DEVELOPMENT_TEAM = 29G42Z5SBF;
 				INFOPLIST_FILE = CAguirreFinalF18Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -477,7 +485,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aguirre.niu.edu.CAguirreFinalF18Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAguirreFinalF18.app/CAguirreFinalF18";
 			};
@@ -488,8 +496,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S224WD5FPF;
+				DEVELOPMENT_TEAM = 29G42Z5SBF;
 				INFOPLIST_FILE = CAguirreFinalF18Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -498,7 +507,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aguirre.niu.edu.CAguirreFinalF18Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAguirreFinalF18.app/CAguirreFinalF18";
 			};
@@ -508,8 +517,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S224WD5FPF;
+				DEVELOPMENT_TEAM = 29G42Z5SBF;
 				INFOPLIST_FILE = CAguirreFinalF18UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -518,7 +528,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aguirre.niu.edu.CAguirreFinalF18UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CAguirreFinalF18;
 			};
@@ -528,8 +538,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S224WD5FPF;
+				DEVELOPMENT_TEAM = 29G42Z5SBF;
 				INFOPLIST_FILE = CAguirreFinalF18UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -538,7 +549,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aguirre.niu.edu.CAguirreFinalF18UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CAguirreFinalF18;
 			};

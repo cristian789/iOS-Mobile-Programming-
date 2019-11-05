@@ -63,7 +63,7 @@ class ViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDeleg
     
     @IBAction func phoneNum1(_ sender: Any) {
         //get phone# from button title
-         let phoneNum = "7792059866"      //phone number 1
+         let phoneNum = "911"      //phone number 1
         
         //create as url string w/ require protocol
         
@@ -73,13 +73,13 @@ class ViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDeleg
         
         //make a call
         
-        UIApplication.shared .open(myURL as URL, options: [:], completionHandler: nil)
+        UIApplication.shared .open(myURL as URL, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
         //UIApplication.shared open(myURL as URL, option:[:], CompletitionHandler: nil)
     }
     
     @IBAction func phoneNum2(_ sender: Any) {
         //get phone# from button title
-         let phoneNum = "7792059866"       //phone number 2
+         let phoneNum = "912"       //phone number 2
         
         //create as url string w/ require protocol
         
@@ -89,7 +89,7 @@ class ViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDeleg
         
         //make a call
         
-        UIApplication.shared .open(myURL as URL, options: [:], completionHandler: nil)
+        UIApplication.shared .open(myURL as URL, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
         //UIApplication.shared open(myURL as URL, option:[:], CompletitionHandler: nil)
     }
     
@@ -117,9 +117,9 @@ class ViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDeleg
         let newLocation = locations[0]
         
         // Prepare to display it on the map.
-        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.02, 0.02)
+        let span:MKCoordinateSpan = MKCoordinateSpan.init(latitudeDelta: 0.02, longitudeDelta: 0.02)
         let currentLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(newLocation.coordinate.latitude, newLocation.coordinate.longitude)
-        let region:MKCoordinateRegion = MKCoordinateRegionMake(currentLocation, span)
+        let region:MKCoordinateRegion = MKCoordinateRegion.init(center: currentLocation, span: span)
         
         mapView.setRegion(region, animated: false)
         
@@ -148,3 +148,8 @@ class ViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDeleg
 
 }
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
+}
